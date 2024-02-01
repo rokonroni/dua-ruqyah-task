@@ -6,10 +6,11 @@ import { TiThMenuOutline } from "react-icons/ti";
 import { HiOutlineLightBulb } from "react-icons/hi2";
 import { CiBookmark } from "react-icons/ci";
 import { VscPersonAdd } from "react-icons/vsc";
+import { BiDonateHeart } from "react-icons/bi";
 import { IoChatboxOutline } from "react-icons/io5";
 export default function Sidebar() {
   return (
-    <div className='min-h- flex flex-col items-center p-2 bg-white min-w-20 my-20 mx-4 rounded-xl '>
+    <div className='flex flex-col items-center p-2 bg-white min-w-20 my-16 ml-4 rounded-xl'>
         <div className='my-4'>
             <Image src={Logo} alt='Dua logo' />
         </div>
@@ -34,7 +35,9 @@ export default function Sidebar() {
             </div>
         </div>
         <div>
-            
+            <div className='mt-8 my-4 w-12 h-12 bg-green-700 rounded-xl flex justify-center items-center'>
+                <BiDonateHeart className="text-2xl text-white"/>
+            </div>
         </div>
     </div>
   )
