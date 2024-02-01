@@ -1,16 +1,17 @@
 import React from 'react'
 import Sidebar from './components/sidebar'
+import Navbar from './components/navbar'
 
 export default function Home() {
   return (
-    <div className='flex  max-h-screen min-w-full'>
-      <aside className='overflow-y-scroll'>
+    <div className='flex max-h-screen'>
+      <aside className='overflow-y-scroll overflow-x-hidden'>
         <Sidebar />
       </aside>
-      <section className=' bg-green-100'>
-
-      </section>
-      <section className=' bg-blue-100 '></section>
+        <nav className=" w-full h-fit ">
+          <Navbar />
+        </nav>
+        
     </div>
   )
 }
